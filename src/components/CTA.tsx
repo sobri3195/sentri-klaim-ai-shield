@@ -27,12 +27,21 @@ export const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <Button 
+              size="lg" 
+              className="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              onClick={() => window.open('https://sentriartificial.com/#/admin', '_blank')}
+            >
               Mulai Uji Coba Gratis
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg backdrop-blur-sm">
-              Konsultasi dengan Tim
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg backdrop-blur-sm"
+              onClick={() => window.open('tel:081395203503', '_self')}
+            >
+              081395203503
             </Button>
           </div>
 
@@ -40,7 +49,7 @@ export const CTA = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <Phone className="h-8 w-8 text-blue-300 mx-auto mb-4" />
               <h3 className="font-semibold mb-2">Hubungi Kami</h3>
-              <p className="text-blue-200 text-sm">+62 21 1234 5678</p>
+              <p className="text-blue-200 text-sm">081395203503</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <Mail className="h-8 w-8 text-blue-300 mx-auto mb-4" />
